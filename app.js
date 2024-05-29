@@ -7,8 +7,8 @@ const ejsMate = require("ejs-mate");
 const methodOverride = require("method-override");
 const wrapAsync = require("./utils/wrapAsync.js");
 const ExpressErr = require("./utils/ExpressErr.js");
-const { listingSchema} = require("./schema.js");
-//const Review = require("./models/review.js");
+const { listingSchema,reviewSchema} = require("./schema.js");
+const Review = require("./models/review.js");
 //const { errorMonitor } = require("stream");
 
 const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
@@ -49,15 +49,15 @@ const validateListing = (req, res , next) =>{
   next()
 }
 //handle review
-// const validateReview = (req, res , next) =>{
-//   let {error} = reviewSchema.validate(req.body);
-//   if(error){
-//     let errMsg = error.details.map((el)=>el.message).join('');
-//     throw new ExpressErr(400,errMsg)
-//   }
-//     else
-//   next()
-// }
+const validateReview = (req, res , next) =>{
+  let {error} = reviewSchema.validate(req.body);
+  if(error){
+    let errMsg = error.details.map((el)=>el.message).join('');
+    throw new ExpressErr(400,errMsg)
+  }
+    else
+  next()
+}
 
 
 //Index Route
@@ -117,20 +117,22 @@ app.delete("/listings/:id", wrapAsync(async (req, res) => {
 
 
 //Review
-// app.post("/listings/:id/reviews", validateReview,wrapAsync(
-//   async (req , res )=>{
-//     let listing = await Listing.findById(req.params.id);
-//     let newReview  = new Review(req.body.review);
-//     listing.reviews.push(newReview);
+app.post("/listings/:id/reviews", validateReview,wrapAsync(
+  async (req , res )=>{
+    let listing = await Listing.findById(req.params.id);
+    let newReview  = new Review(req.body.review);
+    listing.reviews.push(newReview);
      
-//      await newReview.save();
-//      await listing.save();
+     await newReview.save();
+     await listing.save();
     
-//     console.log("review saved")
-//     res.redirect(`/listings/${listing._id}`)
+    console.log("review saved")
+    res.redirect(`/listings/${listing._id}`)
     
-//     }
-// ))
+    }
+))
+
+
 // app.get("/testListing", async (req, res) => {
 //   let sampleListing = new Listing({
 //     title: "My New Villa",

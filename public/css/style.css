@@ -51,7 +51,7 @@ body {
     opacity: 0;
 }
 .card-img-overlay:hover{
-    opacity: 0.2 !important;
+    opacity: 0.3 !important;
     background-color: black !important;
     height: 20rem !important;
 }
