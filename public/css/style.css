@@ -23,7 +23,7 @@ body {
     color: #222222 !important;
 }
 /* cards */
-.card{
+.listing-card{
     border:none !important;
     margin-bottom: 2rem;
 }
@@ -67,6 +67,7 @@ border:none !important;
 /* show page */
 .show-img{
 height: 30vh !important;
+
 }
 .btns{
     display: flex;
@@ -74,4 +75,37 @@ height: 30vh !important;
 .show-card{
     padding-left: 0;
     padding-right: 0;
+}
+
+/* footer */
+.f-info{
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: space-evenly;
+}
+.f-info-links a{
+text-decoration: none ;
+color: #222222;
+}
+.f-info-links a:hover{
+text-decoration: underline ;
+color: rgb(89, 89, 222);
+
+}
+.f-info-links,.f-info-socials,.f-info-brand{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.f-info-socials i{
+font-size: 1.2rem;
+margin-right: 1rem;
+}
+.f-info-socials i:hover{
+    color: #fe424d ease-in;
 }
