@@ -1,4 +1,4 @@
-const { required } = require("joi");
+const { required, ref } = require("joi");
 const mongoose = require("mongoose");
 const Review = require("./review");
 const Schema = mongoose.Schema;
@@ -11,16 +11,8 @@ const listingSchema = new Schema({
   description: String,
   image: {
     type: String,
-    
-    default:
-      "https://www.wbcsd.org/var/site/storage/images/overview/news-insights/wbcsd-insights/accelerating-business-along-the-road-to-a-nature-positive-future/225091-1-eng-GB/Accelerating-business-along-the-road-to-a-nature-positive-future_i1140.jpg",
-    set: (v) =>
-
-    
-     v === ""
-        ? "https://www.wbcsd.org/var/site/storage/images/overview/news-insights/wbcsd-insights/accelerating-business-along-the-road-to-a-nature-positive-future/225091-1-eng-GB/Accelerating-business-along-the-road-to-a-nature-positive-future_i1140.jpg"
-        : v,
-      
+    default: "/css/default-Villa.jpg",
+    set: (v) => v === "" ? "/css/default-Villa.jpg" : v,
   },
   price: Number,
   location: String,
@@ -30,7 +22,11 @@ const listingSchema = new Schema({
       type:Schema.Types.ObjectId,
       ref:"Review"
     }
-  ]
+  ],
+  owner:{
+    type:Schema.Types.ObjectId,
+    ref: "User"
+  }
 });
 
 //delete review in listing

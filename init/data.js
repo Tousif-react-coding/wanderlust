@@ -234,7 +234,7 @@ const sampleListings = [
     {
       title: "Lakefront Retreat in Ontario",
       description: "Experience serene lake views in this cozy retreat nestled in the heart of Ontario's cottage country.",
-      image: "https://images.unsplash.com/photo-1555355955-81418f08de24?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+      image: "https://www.thethinkingtraveller.com/media/Resized/GREECE%20villas/Carmen/SEP22/1000/TTT_Greece_Porto_Heli_Carmen_SEP22_010.jpg",
       price: 1300,
       location: "Ontario",
       country: "Canada"
@@ -242,59 +242,59 @@ const sampleListings = [
   {
       title: "Luxury Safari Camp in Kenya",
       description: "Embark on a once-in-a-lifetime safari adventure in this luxurious camp situated amidst the Kenyan wilderness.",
-      image: "https://images.unsplash.com/photo-1497900157806-2138cc03f814?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+      image: "https://www.thethinkingtraveller.com/media/Resized/GREECE%20villas/Iriana/FEB22/1000/Greece_Porto_Heli_Iriana_NOV21_3.jpg",
       price: 4500,
       location: "Maasai Mara National Reserve",
       country: "Kenya"
   },
-  // {
-  //     title: "Oceanfront Condo in Miami Beach",
-  //     description: "Enjoy breathtaking ocean views from this elegant condo located in the heart of Miami Beach's vibrant scene.",
-  //     image: "https://images.unsplash.com/photo-1568080299315-15ec518315cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-  //     price: 2800,
-  //     location: "Miami Beach",
-  //     country: "United States"
-  // },
-  // {
-  //     title: "Luxury Chalet in the French Alps",
-  //     description: "Ski in style and comfort in this luxurious chalet nestled in the picturesque French Alps.",
-  //     image: "https://images.unsplash.com/photo-1522072082503-acc9f6e2f913?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-  //     price: 3800,
-  //     location: "Chamonix",
-  //     country: "France"
-  // },
-  // {
-  //     title: "Riverside Cabin in the Smoky Mountains",
-  //     description: "Unwind by the river in this charming cabin surrounded by the breathtaking beauty of the Smoky Mountains.",
-  //     image: "https://images.unsplash.com/photo-1543320640-6b3b36e9a266?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-  //     price: 1100,
-  //     location: "Gatlinburg",
-  //     country: "United States"
-  // },
-  // {
-  //     title: "Seaside Villa in Santorini",
-  //     description: "Bask in the sun and enjoy stunning views of the Aegean Sea from this beautiful villa perched on the cliffs of Santorini.",
-  //     image: "https://images.unsplash.com/photo-1517677208171-fd3dad68f981?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-  //     price: 3200,
-  //     location: "Santorini",
-  //     country: "Greece"
-  // },
-  // {
-  //     title: "Historic Riad in Marrakech",
-  //     description: "Immerse yourself in the rich culture of Marrakech in this beautifully restored historic riad.",
-  //     image: "https://images.unsplash.com/photo-1568562707770-54fc2a9dd1d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-  //     price: 2000,
-  //     location: "Marrakech",
-  //     country: "Morocco"
-  // },
-  // {
-  //     title: "Mountain View Lodge in Colorado",
-  //     description: "Experience the beauty of the Rockies in this cozy lodge with panoramic mountain views.",
-  //     image: "https://images.unsplash.com/photo-1566742480554-9b49f90ee8e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-  //     price: 1500,
-  //     location: "Colorado",
-  //     country: "United States"
-  // },
+  {
+      title: "Oceanfront Condo in Miami Beach",
+      description: "Enjoy breathtaking ocean views from this elegant condo located in the heart of Miami Beach's vibrant scene.",
+      image: "https://img.freepik.com/free-photo/swimming-pool-resort_1150-10727.jpg?size=626&ext=jpg&ga=GA1.1.872965841.1718520579&semt=sph",
+      price: 2800,
+      location: "Miami Beach",
+      country: "United States"
+  },
+  {
+      title: "Luxury Chalet in the French Alps",
+      description: "Ski in style and comfort in this luxurious chalet nestled in the picturesque French Alps.",
+      image: "https://img.freepik.com/free-photo/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge_1258-150762.jpg?size=626&ext=jpg&ga=GA1.1.872965841.1718520579&semt=sph",
+      price: 3800,
+      location: "Chamonix",
+      country: "France"
+  },
+  {
+      title: "Riverside Cabin in the Smoky Mountains",
+      description: "Unwind by the river in this charming cabin surrounded by the breathtaking beauty of the Smoky Mountains.",
+      image: "https://img.freepik.com/free-photo/luxury-house-real-estate-sale-property-generative-ai_169016-29360.jpg?size=626&ext=jpg&ga=GA1.1.872965841.1718520579&semt=ais_user",
+      price: 1100,
+      location: "Gatlinburg",
+      country: "United States"
+  },
+  {
+      title: "Seaside Villa in Santorini",
+      description: "Bask in the sun and enjoy stunning views of the Aegean Sea from this beautiful villa perched on the cliffs of Santorini.",
+      image: "https://img.freepik.com/free-photo/coastal-luxury-villa-architecture_1409-7356.jpg?size=626&ext=jpg&ga=GA1.1.872965841.1718520579&semt=sph",
+      price: 3200,
+      location: "Santorini",
+      country: "Greece"
+  },
+  {
+      title: "Historic Riad in Marrakech",
+      description: "Immerse yourself in the rich culture of Marrakech in this beautifully restored historic riad.",
+      image: "https://img.freepik.com/free-photo/3d-house-model-with-modern-architecture_23-2151004035.jpg?size=626&ext=jpg",
+      price: 2000,
+      location: "Marrakech",
+      country: "Morocco"
+  },
+  {
+      title: "Mountain View Lodge in Colorado",
+      description: "Experience the beauty of the Rockies in this cozy lodge with panoramic mountain views.",
+      image: "https://img.freepik.com/free-photo/varenna-village-lombardy-italy_181624-17741.jpg?size=626&ext=jpg&ga=GA1.1.872965841.1718520579&semt=sph",
+      price: 1500,
+      location: "Colorado",
+      country: "United States"
+  },
   // {
   //     title: "Luxury Villa in Ibiza",
   //     description: "Party in style in this luxurious villa located in the heart of Ibiza's vibrant nightlife scene.",
