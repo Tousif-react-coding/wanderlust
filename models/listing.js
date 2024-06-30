@@ -10,9 +10,9 @@ const listingSchema = new Schema({
   },
   description: String,
   image: {
-    type: String,
-    default: "/css/default-Villa.jpg",
-    set: (v) => v === "" ? "/css/default-Villa.jpg" : v,
+    url: String,
+    fileName:String,
+   
   },
   price: Number,
   location: String,
@@ -26,6 +26,17 @@ const listingSchema = new Schema({
   owner:{
     type:Schema.Types.ObjectId,
     ref: "User"
+  },
+  geometry:{
+    type:{
+      type:String, //Don't do `{geometry:{ type:String}}`
+      enum:['Point'],//location.type must be 'point'
+      required:true
+    },
+    coordinates:{
+      type:[Number],
+      required:true,
+    },
   }
 });
 

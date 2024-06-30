@@ -19,6 +19,7 @@ body {
     color: #fe424d;
     font-size: 2rem ;
 }
+
 .nav-link{
     color: #222222 !important;
 }
@@ -113,3 +114,57 @@ margin-right: 1rem;
     color: #fe424d ease-in;
 }
 
+/* Map */
+#map{
+    height: 400px;
+    width: 50vw;
+
+}
+
+/* hometab */
+#filters {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scroll-snap-type: x mandatory; /* Optional: for snapping effect */
+}
+#filters .filter {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    text-align: center; /* Center align text */
+    scroll-snap-align: start; /* Optional: for snapping effect */
+    padding: 10px;
+}
+/* Hide scrollbar */
+#filters::-webkit-scrollbar {
+    display: none;
+}
+#filters {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.filter{
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in;
+}
+
+.filter:hover{
+    opacity: 1;
+    
+}
+
+#tax-info{
+    height: 3.5rem;
+    border: 1px solid black;
+    border-radius: 1rem !important;
+    margin-bottom: 1rem;
+}
+#tax-info label{
+margin-bottom: 3px;
+}
+.tab{
+    align-items: center;
+}
+
+.taxes{
+    display: none;
+}
